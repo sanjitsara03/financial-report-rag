@@ -1,0 +1,5 @@
+.env
+text_db
+table_db
+table_index.json
+testapi.py

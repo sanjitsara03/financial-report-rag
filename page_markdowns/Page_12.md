@@ -1,0 +1,19 @@
+## INDEPENDENT AUDITOR'S REPORT
+### TO THE MEMBERS OF FAN MILK PLC
+
+#### Key Audit Matters (continued)
+
+| Key Audit matters                              | How these matters were addressed in the audit                                                                                                               |
+|------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Impairment of Trade Receivables Ghs5.594m**  |                                                                                                                                                             |
+| Gross trade receivable as at the end of December 31st, 2024 was Ghs24.457m out of which an impairment loss allowance of Ghs5.594m was recognized. | We evaluated the design and tested the operating effectiveness of management’s controls over trade receivables process including recording of credit sales, approval of credit limits and dunning. |
+| Management applied a simplified approach (Provision matrix) to determine the impairment loss allowance which is based on expected credit loss (ECL). | We circularized selected trade receivables amounts for direct confirmation of the existence and amount stated as trade receivable balances. |
+| In applying the provision matrix, management estimates the ultimate write offs for a defined population of trade receivables. Collection of these receivables are then analysed by time buckets. A loss ratio is calculated by dividing the ultimate write off by the amounts outstanding in each time bucket. The ratio is adjusted with forward looking information such as inflation. | We agreed the historical write-offs and the trade receivable time buckets used in the ECL calculation to historical data. The forward-looking information used in the ECL calculation was also agreed to observable macroeconomic data. |
+| Management exercises significant judgements in the determination of default, period selected in assessing historical loss rates and the selection of forward looking information. | We assessed the appropriateness of assumptions and judgements made by management around the definition of default to the nature of forward looking information, the weights assumed in adjusting loss ratio with forward looking information and the period used in assessing the historical loss rates. |
+| The determination of the expected credit loss (ECL) is therefore considered as a key audit matter for the company based on the level of complexity and significant management judgement involved. | We recomputed the impairment loss allowance based on the verified inputs and assumptions used by management. |
+| The basis of the provision and critical judgements relating to the calculation of the impairment provision are summarized in notes 3.3, 3.6, 3.7 and 4.3 to the financial statements. | We performed post balance sheet review on selected debtors to assess payments after the balance sheet date and to test recoverability of trade debtors stated at the year end. |
+| The gross trade receivables and related impairment provisions are disclosed in note 15 to the financial statements. | We checked the adequacy of disclosures made in the financial statements for impairments loss allowances. |
+
+*Forvis Mazars*  
+Chartered Accountants and Business Advisors  
+Partners: ET Aenor JNR, WO Darko, R. Ajumibodi, Nana Anie-Annan, Timothy Aryee.
