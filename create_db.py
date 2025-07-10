@@ -16,7 +16,6 @@ openai.api_key = os.environ['OPENAI_API_KEY']
 
 TABLE_RE = re.compile(
     r'(\|[^\n]*\|\n'           
-    r'\|[^\n]*[-|][^\n]*\|\n'  
     r'(?:\|[^\n]*\|\n?)*)',    
     re.MULTILINE
 )
@@ -29,7 +28,7 @@ SPLITTER = RecursiveCharacterTextSplitter(
 )
 def generate_data(docs: list[Document]):
     table_chunks, text_chunks = split_text(docs)
-    create_db(text_chunks, table_chunks)
+    create_db(table_chunks, text_chunks)
 
 def split_text(docs: list[Document], json_out: str = "table_index.json"):
    
@@ -78,28 +77,19 @@ def split_text(docs: list[Document], json_out: str = "table_index.json"):
         json.dumps(table_links, ensure_ascii=False, indent=2),
         encoding="utf-8"
     )
-    
-    #Debugging
-    for chunk in table_chunks:
-        print(chunk.page_content)
-        print(chunk.metadata)
-        print("--------------------------------")
-    for chunk in text_chunks:
-        print(chunk.page_content)
-        print(chunk.metadata)
-        print("--------------------------------")
+      
     return text_chunks, table_chunks
 
 def create_db(text_chunks, table_chunks):
-    persist_directory = "text_db"
     embeddings = OpenAIEmbeddings()
+    persist_directory = "text_db"
     db = Chroma.from_documents(text_chunks, embeddings, persist_directory=persist_directory)
     persist_directory = "table_db"
     db = Chroma.from_documents(table_chunks, embeddings, persist_directory=persist_directory)
     
 
 if __name__ == "__main__":
-    FILE_PATH = Path("combined_txt_test.txt")   
+    FILE_PATH = Path("combined_txt.txt")   
 
     loader = TextLoader(str(FILE_PATH), encoding="utf-8")
     original_docs = loader.load()
