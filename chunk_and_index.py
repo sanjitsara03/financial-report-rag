@@ -50,7 +50,7 @@ def split_text(docs: list[Document], json_out: str = "table_index.json"):
                     Document(page_content=chunk,
                              metadata={**meta, "chunk_id": chunk_id})
                 )
-
+            
             context_id = chunk_id if text_block.strip() else (context_id if context_id else None)
 
             table = m.group(0).strip()
