@@ -71,12 +71,6 @@ def split_text(docs: list[Document], json_out: str = "table_index.json"):
                 Document(page_content=chunk,
                          metadata={**meta, "chunk_id": chunk_id})
             )
-
-    #Write table links to json
-    Path(json_out).write_text(
-        json.dumps(table_links, ensure_ascii=False, indent=2),
-        encoding="utf-8"
-    )
       
     return text_chunks, table_chunks
 
