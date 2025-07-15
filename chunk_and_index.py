@@ -34,9 +34,9 @@ def split_text(docs: list[Document]):
    
     text_chunks: list[Document] = []
     table_chunks: list[Document] = []
-    text_id = 1  
-    table_id = 1  
-    table_context_id = 1  
+    text_id = 0 
+    table_id = 0  
+    table_context_id = -1  
     for doc in docs:
         text = doc.page_content
         meta = doc.metadata.copy()                 
@@ -45,11 +45,12 @@ def split_text(docs: list[Document]):
         for m in TABLE_RE.finditer(text):
             text_block = text[last_end:m.start()]
             for chunk in SPLITTER.split_text(text_block):
+                text_id += 1
                 text_chunks.append(
                     Document(page_content=chunk,
                              metadata={**meta, "text_id": text_id})
                 )
-                text_id += 1
+                
             
             text_context_id = text_id if text_block.strip() else -1
             if text_context_id == -1:
@@ -66,11 +67,12 @@ def split_text(docs: list[Document]):
 
         trailing = text[last_end:]
         for chunk in SPLITTER.split_text(trailing):
+            text_id += 1
             text_chunks.append(
                 Document(page_content=chunk,
                          metadata={**meta, "text_id": text_id})
             )
-            text_id += 1
+           
       
     return text_chunks, table_chunks
 

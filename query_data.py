@@ -35,20 +35,28 @@ def main():
         return
     context_text = ""
     for table_doc,score in results:
-        print(table_doc.metadata)
+        context_text = table_doc.page_content + "\n\n---\n\n" + context_text
         text_id = table_doc.metadata["text_context_id"]
+        table_doc_dup = table_doc
+
         if int(text_id) == -1:
-            table_id = table_doc.metadata["table_context_id"]
-            table_result = db_table.similarity_search("placeholder", k=1, filter={"table_id": table_id})
-            table_doc_2 = table_result[0] if table_result else None
-            if table_doc_2:
-                context_text += table_doc_2.page_content + "\n"
-                context_text += table_doc.page_content + "\n\n---\n\n"
+            
+            while(int(text_id) == -1):
+         
+                table_id = table_doc_dup.metadata["table_context_id"]
+                table_result = db_table.similarity_search("placeholder", k=1, filter={"table_id": table_id})
+                table_doc_2 = table_result[0] if table_result else None
+                if not table_doc_2:
+                    print("No table found")
+                if table_doc_2:
+                    context_text = table_doc_2.page_content + "\n" + context_text
+                    text_id = table_doc_2.metadata["text_context_id"]                   
+                    table_doc_dup = table_doc_2
         text_results = db_text.similarity_search("placeholder", k=1, filter={"text_id": text_id})
         text_doc = text_results[0] if text_results else None
         if text_doc:
-            context_text += text_doc.page_content + "\n"
-            context_text += table_doc.page_content + "\n\n---\n\n"
+            context_text = text_doc.page_content + "\n" + context_text
+            
     
 
     

@@ -1,0 +1,49 @@
+{'source': 'combined_txt.txt', 'table_id': 16, 'table_context_id': 15, 'text_context_id': -1}
+{'source': 'combined_txt.txt', 'text_context_id': 61, 'table_id': 17, 'table_context_id': 15}
+{'table_context_id': 10, 'text_context_id': 58, 'table_id': 12, 'source': 'combined_txt.txt'}
+Human: 
+Answer the question based only on the following context:
+
+| **Total liabilities**          |      | 317,993 | 361,159 |
+| **Total equity and liabilities** |   | 590,728 | 590,250 |
+
+---
+
+# Page 20
+
+## STATEMENT OF CASH FLOWS
+### FOR THE YEAR ENDED 31 DECEMBER 2024
+*(All amounts are expressed in thousands of Ghana Cedi unless otherwise stated)*
+|                | Share Capital | Retained Earnings | Total Equity |
+|----------------|---------------|-------------------|--------------|
+| **2024**       |               |                   |              |
+| Balance at 1 January | 10,000        | 219,091           | 229,091      |
+| Profit for the year  | -             | 49,455            | 49,455       |
+| Dividend to Equity Holders | -             | (5,811)           | (5,811)      |
+| **Balance at 31 December** | 10,000        | 262,735           | 272,735      |
+|                |               |                   |              |
+| **2023**       |               |                   |              |
+| Balance at 1 January | 10,000        | 195,079           | 205,079      |
+| Profit for the year  | -             | 24,012            | 24,012       |
+| **Balance at 31 December** | 10,000        | 219,091           | 229,091      |
+
+---
+
+#### Liabilities
+
+##### Non-Current Liabilities
+|                                | Note | 2024    | 2023    |
+|--------------------------------|------|---------|---------|
+| Share capital                  | 18   | 10,000  | 10,000  |
+| Retained earnings              |      | 262,735 | 219,091 |
+| **Total equity**               |      | 272,735 | 229,091 |
+
+---
+
+
+
+---
+
+Question:  what is the value of total equity and liability in the context? take the latest year value with currency.
+
+Response: The value of total equity and liabilities for the latest year, 2024, is 590,728 thousand Ghana Cedi.
