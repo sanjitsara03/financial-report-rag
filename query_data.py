@@ -18,11 +18,12 @@ Question:  {question}
 """
 
 
-def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("query_text", type=str, help="The query text.")
-    args = parser.parse_args()
-    query_text = args.query_text
+def main(query_text=None):
+    if query_text is None:
+        parser = argparse.ArgumentParser()
+        parser.add_argument("query_text", type=str, help="The query text.")
+        args = parser.parse_args()
+        query_text = args.query_text
 
     embedding_function = OpenAIEmbeddings()
     db_table = Chroma(persist_directory=CHROMA_PATH_TABLE, embedding_function=embedding_function)
@@ -70,6 +71,7 @@ def main():
 
     response = f"Response: {response_text}\n"
     print(response)
+    return response
 
 
 if __name__ == "__main__":
