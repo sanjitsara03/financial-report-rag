@@ -1,10 +1,8 @@
-## Amendments to IAS 16 – Property, Plant and Equipment—Proceeds before Intended Use
+## Amendments to IAS 16 — Property, Plant and Equipment—Proceeds before Intended Use
 
-The amendments prohibit deducting from the cost of an item of property, plant and equipment any proceeds from selling items produced before that asset is available for use, i.e. proceeds while bringing the asset to the location and condition necessary for it to be capable of operating in the manner intended by management. Consequently, an entity recognises such sales proceeds and related costs in profit or loss. The entity measures the cost of those items in accordance with IAS 2 *Inventories*.
+The amendments prohibit deducting from the cost of an item of property, plant and equipment any proceeds from selling items produced before that asset is available for use, i.e. proceeds while bringing the asset to the location and condition necessary for it to be capable of operating in the manner intended by management. Consequently, an entity recognises such sales proceeds and related costs in profit or loss. The entity measures the cost of those items in accordance with IAS 2 *Inventories*. Performance of the asset is such that it is capable of being used in the production or supply of goods or services, for rental to others, or for administrative purposes.
 
-Performance of the asset is such that it is capable of being used in the production or supply of goods or services, for rental to others, or for administrative purposes.
-
-The amendments also clarify the meaning of ‘testing whether an asset is functioning properly’. IAS 16 now specifies this as assessing whether the technical and physical.
+The amendments also clarify the meaning of ‘testing whether an asset is functioning properly’. IAS 16 now specifies this as assessing whether the technical and physical capabilities of the asset are such that it is capable of being used in the manner intended by management.
 
 If not presented separately in the statement of comprehensive income, the financial statements shall disclose the amounts of proceeds and cost included in profit or loss that relate to items produced that are not an output of the entity’s ordinary activities, and which line item(s) in the statement of comprehensive income include(s) such proceeds and cost.
 
@@ -16,9 +14,7 @@ The amendments are effective for annual periods beginning on or after 1 January 
 
 ## Amendments to IAS 1 and IAS 8 Definition of material
 
-The amendments are intended to make the definition of material in IAS 1 easier to understand and are not intended to alter the underlying concept of materiality in IFRS Standards. The concept of ‘obscuring’ material information with immaterial information has been included as part of the new definition.
-
-The threshold for materiality influencing users has been changed from ‘could influence’ to ‘could reasonably be expected to influence’.
+The amendments are intended to make the definition of material in IAS 1 easier to understand and are not intended to alter the underlying concept of materiality in IFRS Standards. The concept of ‘obscuring’ material information with immaterial information has been included as part of the new definition. The threshold for materiality influencing users has been changed from ‘could influence’ to ‘could reasonably be expected to influence’.
 
 The definition of material in IAS 8 has been replaced by a reference to the definition of material in IAS 1. In addition, the IASB amended other Standards and the *Conceptual Framework* that contain a definition of material or refer to the term ‘material’ to ensure consistency.
 
@@ -36,4 +32,4 @@ The amendments are applied prospectively to all business combinations and asset 
 
 ## Impact of the initial application of Covid-19-Related Rent Concessions Amendment to IFRS 16
 
-In May 2021, the IASB issued *Covid-19-Related Rent Concessions (Amendment to IFRS 16)* that provides practical relief to lessees in accounting for rent concessions occurring as a direct
+In May 2021, the IASB issued *Covid-19-Related Rent Concessions (Amendment to IFRS 16)* that provides practical relief to lessees in accounting for rent concessions occurring as a direct consequence of the covid-19 pandemic.

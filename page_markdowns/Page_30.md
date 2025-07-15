@@ -6,7 +6,7 @@ Trade receivables are amounts due from customers for merchandise sold in the ord
 
 ### Initial recognition and measurement
 
-All financial liabilities are recognised initially at fair value and, in the case of loans and borrowings, minus directly attributable transaction cost. The company's financial liabilities include trade and other payables.
+All financial liabilities are recognised initially at fair value and, in the case of loans and borrowings, minus directly attributable transaction cost. The company’s financial liabilities include trade and other payables.
 
 ### Subsequent measurement of financial liabilities
 
@@ -30,7 +30,7 @@ The proceeds of ordinary shares are classified as ‘stated capital’ in equity
 
 ## 3.12 Taxation
 
-The amount stated as income tax expense for the period comprises current and deferred income tax. Tax is recognised in the profit or loss, except to the extent that it relates to items recognised in other comprehensive income or directly in equity. In this case, the tax is also recognised in other comprehensive income or directly in equity, respectively.
+The amount stated as Income tax expense for the period comprises current and deferred income tax. Tax is recognised in the profit or loss, except to the extent that it relates to items recognised in other comprehensive income or directly in equity. In this case, the tax is also recognised in other comprehensive income or directly in equity, respectively.
 
 ### Current income tax
 

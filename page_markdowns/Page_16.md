@@ -1,7 +1,7 @@
 ## INDEPENDENT AUDITOR’S REPORT
 ### TO THE MEMBERS OF FAN MILK PLC
 
-### Report on Other Legal and Regulatory Requirements
+**Report on Other Legal and Regulatory Requirements**
 
 The Companies Act, 2019 (Act 992) requires that in carrying out our audit we consider and report on the following matters. We confirm that:
 
@@ -21,6 +21,8 @@ The Engagement Partner on the audit resulting in this independent auditor's repo
 
 FORVIS MAZARS
 
+---
+
 Forvis Mazars Ghana (ICAG/F/2025/079)  
 Chartered Accountants and Business Advisors  
 3rd Floor, One Airport Square, Accra.  
@@ -29,12 +31,10 @@ Nos. 7 and 9 Nyame Adom Courts, Adonai Lane,
 Adjiringanor, East Legon, Accra  
 GD-165-5957  
 PMB LG DTD 20014, Accra  
-P. O. Box GP 2957, Accra
+P. O. Box GP 2957, Accra  
 
-7th April 2025
+7th April 2025  
 
----
-
-Forvis Mazars  
-Chartered Accountants and Business Advisors  
-Partners: ET Akonor JNR, WO Darko, R. Ajetunmobi, Nana Anie-Annin, Timothy Aryee.
+*Forvis Mazars*  
+*Chartered Accountants and Business Advisors*  
+*Partners: ET Akonor JNR, WO Darko, R. Ajetunmobi, Nana Anie-Annan, Timothy Aryee.*

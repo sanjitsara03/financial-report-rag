@@ -2,12 +2,10 @@
 
 The report of the directors was approved by the board of directors on 7 April 2025 and signed on their behalf as follows:
 
----
-
 **Freda Duplan**  
-Chairperson  
+Chairperson
 
 **Lionel Parent**  
-Managing Director  
+Managing Director
 
 **Date:** 7 April 2025

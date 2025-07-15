@@ -27,6 +27,6 @@ This is a further clarification to the initial amendment to IAS 1. If an entity�
 
 The Company has adopted the amendments included in the *Annual Improvements to IFRS Standards 2018–2023 Cycle* with no material impact including the following amendments:
 
-### Amendments to IAS 37 – Onerous Contracts—Cost of Fulfilling a Contract
+## Amendments to IAS 37 – Onerous Contracts—Cost of Fulfilling a Contract
 
-The amendments specify that the ‘cost of fulfilling’ a contract comprises the ‘costs that relate directly to the contract’. Costs that relate directly to a contract consist of both the incremental costs of fulfilling the contract.
+The amendments specify that the ‘cost of fulfilling’ a contract comprises the ‘costs that relate directly to the contract’. Costs that relate directly to a contract consist of both the incremental costs of fulfilling
