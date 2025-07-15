@@ -5,3 +5,5 @@ testing.py
 page_markdowns
 page_jpegs
 __pycache__
+table_db
+text_db
