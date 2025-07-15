@@ -24,12 +24,7 @@ with tab1:
 
         st.success("File uploaded successfully")
 
-        if st.button("Run Chunk + Index"):
-            with st.spinner("Processing document..."):
-                loader = TextLoader(str(tmp_path), encoding="utf-8")
-                docs = loader.load()
-                generate_data(docs)
-                st.success("Chunking and indexing complete")
+        
 
 with tab2:
     uploaded_pdf_file = st.file_uploader("Upload a `.pdf` financial report", type=["pdf"])
@@ -44,9 +39,15 @@ with tab2:
                 process_images_to_markdown()
                 stitch_markdown_pages('page_markdowns', 'combined_txt.txt')
                 st.success("PDF to MD complete")
+    
             
 
-
+if st.button("Run Chunk + Index"):
+            with st.spinner("Processing document..."):
+                loader = TextLoader(str(tmp_path), encoding="utf-8")
+                docs = loader.load()
+                generate_data(docs)
+                st.success("Chunking and indexing complete")
 
 query_text = st.text_input("Enter your query")
 if st.button("Query Data") and query_text:
