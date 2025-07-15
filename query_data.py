@@ -35,8 +35,16 @@ def main():
         return
     context_text = ""
     for table_doc,score in results:
-        text_id = table_doc.metadata["text_chunk_id"]
-        text_results = db_text.similarity_search("placeholder", k=1, filter={"chunk_id": text_id})
+        print(table_doc.metadata)
+        text_id = table_doc.metadata["text_context_id"]
+        if int(text_id) == -1:
+            table_id = table_doc.metadata["table_context_id"]
+            table_result = db_table.similarity_search("placeholder", k=1, filter={"table_id": table_id})
+            table_doc_2 = table_result[0] if table_result else None
+            if table_doc_2:
+                context_text += table_doc_2.page_content + "\n"
+                context_text += table_doc.page_content + "\n\n---\n\n"
+        text_results = db_text.similarity_search("placeholder", k=1, filter={"text_id": text_id})
         text_doc = text_results[0] if text_results else None
         if text_doc:
             context_text += text_doc.page_content + "\n"

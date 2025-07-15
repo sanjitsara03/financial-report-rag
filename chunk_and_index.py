@@ -30,13 +30,13 @@ def generate_data(docs: list[Document]):
     table_chunks, text_chunks = split_text(docs)
     create_db(table_chunks, text_chunks)
 
-def split_text(docs: list[Document], json_out: str = "table_index.json"):
+def split_text(docs: list[Document]):
    
     text_chunks: list[Document] = []
     table_chunks: list[Document] = []
-    table_links: list[dict] = []
-    chunk_id = 0  
-
+    text_id = 1  
+    table_id = 1  
+    table_context_id = 1  
     for doc in docs:
         text = doc.page_content
         meta = doc.metadata.copy()                 
@@ -45,32 +45,32 @@ def split_text(docs: list[Document], json_out: str = "table_index.json"):
         for m in TABLE_RE.finditer(text):
             text_block = text[last_end:m.start()]
             for chunk in SPLITTER.split_text(text_block):
-                chunk_id += 1
                 text_chunks.append(
                     Document(page_content=chunk,
-                             metadata={**meta, "chunk_id": chunk_id})
+                             metadata={**meta, "text_id": text_id})
                 )
+                text_id += 1
             
-            context_id = chunk_id if text_block.strip() else (context_id if context_id else None)
+            text_context_id = text_id if text_block.strip() else -1
+            if text_context_id == -1:
+                table_context_id = table_id
 
             table = m.group(0).strip()
+            table_id += 1
             table_chunks.append(
                 Document(page_content=table,
-                         metadata={**meta, "text_chunk_id": context_id})
+                         metadata={**meta,"table_id": table_id, "text_context_id": text_context_id, "table_context_id": table_context_id})
             )
-            table_links.append({
-                "table": table,
-                "context_chunk_id": context_id
-            })
+            
             last_end = m.end()
 
         trailing = text[last_end:]
         for chunk in SPLITTER.split_text(trailing):
-            chunk_id += 1
             text_chunks.append(
                 Document(page_content=chunk,
-                         metadata={**meta, "chunk_id": chunk_id})
+                         metadata={**meta, "text_id": text_id})
             )
+            text_id += 1
       
     return text_chunks, table_chunks
 
